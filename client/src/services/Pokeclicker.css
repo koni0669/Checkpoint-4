@@ -1,0 +1,108 @@
+/* Styles généraux pour tous les écrans */
+.pokemon-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.pokemoncardpokeclicker {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+p {
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Styles spécifiques pour les écrans de tablettes et plus petits */
+@media (max-width: 768px) {
+  .pokemon-image {
+    max-width: 300px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Styles spécifiques pour les écrans de téléphones */
+@media (max-width: 480px) {
+  .pokemon-image {
+    max-width: 200px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+p.score {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+p.HP {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+p.attack {
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+}
+
+p.defense {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+p.speed {
+  font-size: 20px;
+  color: purple;
+  font-weight: bold;
+}
+
+p.pokemon-name {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
