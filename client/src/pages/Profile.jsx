@@ -25,7 +25,6 @@ function Profile() {
           {pokemons.map((pokemon) => (
             <li className="pokemons" key={pokemon.id}>
               <h2>{pokemon.name}</h2>
-              <p>Score : {pokemon.score}</p>
               <p>
                 Type: {pokemon.apiTypes.map((type) => type.name).join(", ")}
               </p>
